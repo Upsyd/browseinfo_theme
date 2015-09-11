@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+<template id="assets_frontend" inherit_id="website.assets_frontend" name="Shop">
+  <xpath expr="." position="inside">
+            <link href="/browseinfo_theme/static/src/css/animate.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/bootstrap.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/carousel.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/custom.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homeapp.css" rel="stylesheet" />
+            
+            <link href="/browseinfo_theme/static/src/css/prettyPhoto.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/style.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/rs-plugin/css/settings.css" rel="stylesheet" media="screen" />
+          
+            <!--<link href="/browseinfo_theme/static/src/css/homebeauty.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homeedu.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homeevent.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homefitness.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homehealth.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homehotel.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homelawyer.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homemechanic.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homerealestate.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homereligion.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homerenovate.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homerestaurant.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homeresume.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/hometransport.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/hometravel.css" rel="stylesheet" />
+            <link href="/browseinfo_theme/static/src/css/homewedding.css" rel="stylesheet" />-->
+            <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"/>
+            <script src="/browseinfo_theme/static/src/js/googlemap.js" type="text/javascript"/>
+            <script src="/browseinfo_theme/static/src/js/jquery.min.js" type="text/javascript"/>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+		    <script src="/browseinfo_theme/static/src/js/bootstrap.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/wow.js" type="text/javascript"/>
+		    
+		    
+		    
+		    <!--custom js-->
+		    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"/>
+		    <script src="/browseinfo_theme/static/src/js/carousel.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/contact.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/countdown.js" type="text/javascript"/>
+		   
+		    <script src="/browseinfo_theme/static/src/js/imagesloaded.pkgd.min.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/isotope.pkgd.min.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/jquery.fitvids.js" type="text/javascript"/>
+		    
+		    <script src="/browseinfo_theme/static/src/js/jquery.prettyPhoto.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/main.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/masonry.pkgd.min.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/owl-main.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/parallax.min.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/portfolio.js" type="text/javascript"/>
+		    <script src="/browseinfo_theme/static/src/js/retina.js" type="text/javascript"/>
+		    
+	
+        
+   	<!-- SLIDER REV -->
+	<script src="/browseinfo_theme/static/src/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/browseinfo_theme/static/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script>
+	jQuery(document).ready(function() {
+		jQuery('.tp-banner').show().revolution(
+			{
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:650,
+			hideThumbs:200,     
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,  
+			navigationType:"none",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",  
+			touchenabled:"on",
+			onHoverStop:"on",
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,          
+			parallax:"mouse",
+			parallaxBgFreeze:"on",
+			parallaxLevels:[10,7,4,3,2,5,4,3,2,1],
+			parallaxDisableOnMobile:"off",           
+			keyboardNavigation:"off",   
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,  
+			shadow:0,
+			fullWidth:"on",
+			fullScreen:"off",
+			spinner:"spinner4",  
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",  
+			autoHeight:"off",           
+			forceFullWidth:"off",                         
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,            
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: ""  
+			}); 
+		});
+	</script>
+
+   
+
+        
+  </xpath>
+</template>
+
+ <!--<template id="custom_title" name="change title" inherit_id="web.layout">
+      <xpath expr="//title" position="replace">
+        <title>BrowseInfo</title>
+      </xpath>
+    </template>-->
+
+		
+<template id="header_top_main_menu_navbar" name="Header top hide" inherit_id="website.user_navbar">
+<xpath expr="//nav[@id='oe_main_menu_navbar']" position="replace">
+
+<div class="topbar clearfix">
+			<div class="container">
+				<div class="row-fluid mb-5">
+					<div class="col-md-12">
+						<div class="pull-left">
+							<div class="contactwrap text-left">
+								<ul class="list-inline">
+									<li><i class="fa fa-phone"></i> Call Us : (+91) 9978020412</li>
+									<li><i class="fa fa-envelope"></i> Email Us : contact@browseinfo.in</li>
+								</ul>
+							</div><!-- end contactwrap -->
+						</div><!-- end col -->
+
+						<div class="pull-right">
+								<ul class="social">
+									<li class="facebook" ><a href="https://www.facebook.com/pages/BrowseInfo/416425701744026?fref=ts/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="google"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									<li class="github"><a href="https://www.github.com/browseinfo" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									<li class="skype"><a href="https://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a></li>
+								<li>
+	        <ul class="#">
+              <li><div id="google_translate_element"></div>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'en',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li></ul></li> 	
+								</ul>
+						</div><!-- end col -->
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div><!-- end topbar -->
+
+
+</xpath>
+</template>
+		
+
+
+
+ <!-- <template id="browseinfo_theme.login_layout" inherit_id="web.login_layout" name="BrowseInfo Theme Logo">
+           
+            <xpath expr="//div[@class='oe_single_form_logo']" position="replace">
+                <div class="oe_single_form_logo">
+                    <img src="/mytheme/static/src/img/logo.png"
+                         alt="BrowseInfo Theme Logo"
+                         title="BrowseInfo Theme Logo" />
+                </div>
+            </xpath>
+        </template>-->
+
+ <!-- <template id="theme_bi_website" name="Menu Navigation" inherit_id="website.layout">
+   <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+
+    <header id="headeraffix" class="header nobg" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-12">
+
+						<nav class="yamm navbar navbar-default navbar-static-top" role="navigation">
+							<div class="container-fluid">
+								<div class="navbar-table">
+									<div class="navbar-cell tight">
+										<div class="navbar-header">
+											<a class="navbar-brand" href="index-2.html"><img src="images/logoapp.png" alt="Ova"/></a>
+											<div>
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+													<span class="sr-only">Toggle navigation</span>
+													<span class="fa fa-bars"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="navbar-cell stretch">
+										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+											<div class="navbar-cell">
+												<ul class="nav navbar-nav navbar-right">
+													<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="fa fa-angle-down"></b></a></li>
+													<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="fa fa-angle-down"></b></a></li>
+													<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="fa fa-angle-down"></b></a></li>
+													<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="fa fa-angle-down"></b></a></li>
+													</ul>
+		
+																		
+											</div>
+										</div>        
+									</div>
+								</div>
+							</div>
+						</nav>
+					
+				</div>
+				</div>
+			</div>
+			</header>
+			
+
+  </xpath></template> -->
+
+
+
+
+      <!--<template id ="website_top_menu" name="menu_on_top" inherit_id="website.layout" >
+            <xpath expr="//ul[@id='top_menu']" position="inside">
+                <li><a href="#services-top">Services</a></li>
+                <li><a href="#team-top">About us</a></li>
+                <li><a href="#contact-top">Contact</a></li>
+            </xpath>
+        </template>-->
+        
+        
+      <!--<template id="custom_layout_logo" inherit_id="website.layout" customize_show="True" name="Show Logo">
+    <xpath expr="//header//a[@class='navbar-brand']" position="after">
+        <a href="/" class="navbar-brand logo">
+        <img src="/browseinfo_theme/static/src/images/logoapp.png" t-att-alt="'Logo of BrowseInfo' BrowseInfo" t-att-title="BrowseInfo" alt="BrowseInfo"/></a>
+           <img src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/></a>
+        
+    </xpath>
+</template>-->
+
+
+
+        
+    <template id="404">
+  <t t-call="website.layout">
+      <div id="wrap">
+          <div class="oe_structure oe_empty">
+              <div class="container">
+                  <h1 class="mt32">Page not found!</h1>
+                  <p>Sorry, this Page is not available anymore.</p>
+                  <p><a t-attf-href="/about">Return to the About Us Page.</a></p>
+              </div>
+          </div>
+      </div>
+  </t>
+</template>
+       
+<template id="custom_layout_website" inherit_id="website.homepage">
+          <xpath expr="//div[@id='wrap']" position="replace">
+               
+               
+                 <div id="loader">
+        <div class="loader-container">
+			<div class="sexyload">Loading...</div>
+        </div>
+    </div>
+       
+<!--Slider-->
+		<section class="slider-section">
+			<div class="tp-banner-container">
+				<div class="tp-banner">
+					<ul>
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="100" data-thumb="/browseinfo_theme/static/src/upload/slider_02.jpg"  data-saveperformance="off"  data-title="Slide">
+							<img src="/browseinfo_theme/static/src/upload/slider_02.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/>
+	                        <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="240" 
+	                            data-speed="1000"
+	                            data-start="600"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Welcome To BrowseInfo
+	                        </div>
+	                        <div class="tp-caption text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="320" 
+	                            data-speed="1000"
+	                            data-start="700"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><img src="/browseinfo_theme/static/src/images/dummy.png" alt="" data-lazyload="/browseinfo_theme/static/src/upload/slider_hr.png"/>
+	                        </div>
+	                        <div class="tp-caption slider_layer_03 text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="360" 
+	                            data-speed="1000"
+	                            data-start="800"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Good design is making something intelligible and memorable.<br/> You can't have great software without a great team, Like Us.
+	                        </div>
+	                        <div class="tp-caption slider-button text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="440" 
+	                            data-speed="1000"
+	                            data-start="1200"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#" class="btn btn-primary border-radius">Get Started</a> 
+	                        </div>
+	                    </li>
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="100" data-thumb="/browseinfo_theme/static/src/upload/slider_29.jpg"  data-saveperformance="off"  data-title="Slide">
+							<img src="/browseinfo_theme/static/src/upload/slider_29.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/>
+	                        <div class="tp-caption slider_layer_01 text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="200" 
+	                            data-speed="1000"
+	                            data-start="600"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">BI Helps You Touch The Sky
+	                        </div>
+	                        <div class="tp-caption text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="260" 
+	                            data-speed="1000"
+	                            data-start="700"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><img src="/browseinfo_theme/static/src//dummy.png" alt="" data-lazyload="/browseinfo_theme/static/src/upload/slider_hr.png"/>
+	                        </div>
+	                        <div class="tp-caption slider_layer_02 text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="300" 
+	                            data-speed="1000"
+	                            data-start="800"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">We understand your needs...
+	                        </div>
+	                        <div class="tp-caption slider_layer_03 text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="380" 
+	                            data-speed="1000"
+	                            data-start="1000"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is <br/>  to instruct a computer what to to, let us concentrate rather on explaining to human beings what we want a computer to do.
+	                        </div>
+	                        <div class="tp-caption slider-button text-center lft tp-resizeme"
+	                            data-x="center"
+	                            data-y="440" 
+	                            data-speed="1000"
+	                            data-start="1200"
+	                            data-easing="Power3.easeInOut"
+	                            data-splitin="none"
+	                            data-splitout="none"
+	                            data-elementdelay="0.1"
+	                            data-endelementdelay="0.1"
+	                            data-endspeed="1000"
+	                            style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"><a href="#" class="btn btn-default border-radius">Read More</a> &#160;&#160;&#160;&#160; <a href="#" class="btn btn-primary border-radius">Get Started</a> 
+	                        </div>
+	                    </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+	<!--About Us Page-->
+
+<section class="section dark">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>About Us</h4>
+					<hr/>
+					<p>We are on a mission</p>
+				</div><!-- end title -->
+				<div class="row text-center">
+					<div id="content" class="col-md-12">
+						<p style="font-size:15px; color:white;"> BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+
+						<p style="font-size:15px; color:white;"> We work closely in collaboration with clients to ensure that every project communicates their unique identity. And we're not focused on "giving advice" but on creating solutions that sell.</p>
+
+						<p style="font-size:15px; color:white;"> At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity. </p>
+
+						<p style="font-size:15px; color:white;"> We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders. </p>
+
+						
+
+					</div><!-- end content -->
+				</div><!-- end row -->
+			</div>
+		</section>
+		
+		
+			<section class="section white">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>We are BrowseInfo</h4>
+					<hr/>
+					<p>All What You Need To Know About Us</p>
+				</div><!-- end title -->
+
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p> BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+
+						<p>We work closely in collaboration with clients to ensure that every project communicates their unique identity. And we're not focused on "giving advice" but on creating solutions that sell. </p>
+
+						<p>At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity.   </p>
+						<p>We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders.  </p>
+					</div><!-- end col -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="accordion-widget">
+                            <div class="accordion-toggle-2">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                                                    <h3>Who we are ? <i class="indicator fa fa-plus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                                                    <h3>Why BrowseInfo ? <i class="indicator fa fa-minus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <p>At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity. We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                                                    <h3>Odoo (OpenERP) ? <i class="indicator fa fa-plus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>"Opensource 's most advanced business application software provided by only OpenERP" OpenERP is a opensource ERP system which is most popular ERP on Opensource cause OpenERP provided the all kind of big business application, like CRM, Sale, Purchase,Accounting, MRP, Warehouse, Marketing Campaign etc... The most benefits of OpenERP is these all modules are integrated to each others. So it reduces the data entry and become automated system.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- accordion -->
+                        </div><!-- end accordion-widget -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		
+		   		<section class="section fullscreen paralbackground parallax nopadbot" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_01.jpg');" data-img-width="1608" data-img-height="709" data-diff="100">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="text-widget">
+							<h4>Odoo (OpenERP)</h4>
+							<hr/>
+
+							<p>"Opensource 's most advanced business application software provided by only OpenERP" OpenERP is a opensource ERP system which is most popular ERP on Opensource cause OpenERP provided the all kind of big business application, like CRM, Sale, Purchase,Accounting, MRP, Warehouse, Marketing Campaign etc... The most benefits of OpenERP is these all modules are integrated to each others. So it reduces the data entry and become automated system.</p>
+
+							<p>This is the only one Opensource ERP which provided the 1000+ modules, you can see it on apps.openerp.com. OpenERP is a good business model with modular functionality with using a MVC architecture. OpenERP provided a generic system flow, So if anyone want to use then have to know about the how to configure your system with OpenERP and we are doing this very peacefully and accurately. Also you have to do some customization on this generic system and we have provided it.</p>
+							<p>OpenERP framework is not hard to use, So user can easily customize it.</p>
+							<p>OpenERP framework is developed on python programming language, python is also opensource so you can use any libraries of it freely.</p>
+
+							<div class="button-wrapper">
+							<a href="/odoo" class="btn btn-primary border-radius">Read More</a>
+								
+								</div><!-- &#160;&#160;&#160;&#160;  <a href="#" class="btn btn-default border-radius">Read More</a>
+							--><!-- end button-wrapper -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+					<div class="col-md-6 col-sm-6">
+						<div class="device-image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+							<img src="/browseinfo_theme/static/src/upload/Odoo_mobile.png" alt="" style="margin-top:-124px;"/>
+						</div><!-- end service -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		
+		<!--Why-->
+
+		<section class="section grey box-shadow">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>Services</h4>
+					<hr/>
+					<p>How awesome can it be?</p>
+				</div><!-- end title -->
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-star"></i>
+							</div>
+							<p><strong>Odoo (Open ERP)</strong></p>
+							<p>We have good experts on OpenERP technical and functional parts like CRM, Sale, Purchase , Manufacturing etc. We are working on all version of OpenERP 6.0, 6.1 and also able to do for future V7. We have providing services of offshore module development on OpenERP.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-desktop"></i>
+							</div>
+							<p><strong>Web Designing</strong></p>
+							<p>We offer complete web design and coding of web pages delivering interactive web applications. We can customize a solution specifically to suit your needs from basic Website Design to complete e-commerce stores. Whether you are looking for a basic brochure type layout or fully interactive website,Contact us to discuss your project.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-umbrella"></i>
+							</div>
+							<p><strong>Web Development</strong></p>
+							<p>We offers complete cycle of development beginning with software vision formulating and requirements management, analysis, designing up to coding, implementation, rigorous testing, deployment and support. Our team can contribute at any stage of a project or project with non-complete life cycle.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-gear"></i>
+							</div>
+							<p><strong>Training</strong></p>
+							<p>We have a good Functional Experts of OpenERP which have knowledge of Official addons as well as community/extra-addons modules knowledge. So we can provide you a Fuctional Training of not only Offical addons but we can also aware you about the community addons which will use for you.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+				<div class="button-wrapper text-center">
+					<a href="/services" class="btn btn-primary border-radius btn-lg btn-dark">Read More</a> 
+				</div><!-- end button wrapper -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		
+		   		<section class="section fullscreen paralbackground parallax" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_07.jpg');" data-img-width="1608" data-img-height="321" data-diff="100">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>Join us</h4>
+					<hr/>
+					<p>Want to have a Career with us ? :)</p>
+				</div><!-- end title -->
+                </div>
+				<div class="row text-center">
+					<div id="content" class="col-md-12">
+						<p style="font-size: 30px;
+    color: #1abb9a;
+    font-style: italic;
+    font-family: serif;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: -2px;"> “The best brains of the nation may be found on the LAST BENCHES of the classroom ” - Dr. APJ Abdul Kalam</p><br/>
+
+
+           <h4 style="color: #FFFFFF;"> If You Think You're one of those, Send your resume at <strong>CAREER@BROWSEINFO.IN</strong></h4>
+					
+                        
+					</div><!-- end content -->
+				</div><!-- end row -->
+		
+		</section>
+
+		
+		
+		
+		<section class="section dark">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>Odoo Pricing</h4>
+					<hr/>
+					<p>Lets Talk About Work :)</p>
+				</div><!-- end title -->
+
+				<div class="row ptables">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<div class="pheader clearfix">
+								<div class="pricing-title">
+									<h4>Basic Plan</h4>
+									<p>Ideal for Starter Websites</p>
+								</div>
+								<div class="pricing_price">
+									<h4>10 $ Month</h4>
+								</div>
+							</div>
+
+							<div class="pbody">
+								<ul>
+									<li>Disk Space <span>300 GB</span></li>
+									<li>Data Transfer <span>Unlimited</span></li>
+									<li>Ftp Accounts <span>25</span></li>
+									<li>Email Boxes <span>1000</span></li>
+									<li>Free Domains <span>1</span></li>
+									<li>Support <span>24Hours</span></li>
+								</ul>
+							</div>
+							<div class="pricing-footer">
+								<a href="#" class="btn btn-primary btn-block">Order it Now</a>
+							</div>
+						</div><!-- end pricing-table -->
+					</div><!-- end col -->
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<div class="pheader clearfix">
+								<div class="pricing-title">
+									<h4>Pro Plan</h4>
+									<p>Ideal for Pro Websites</p>
+								</div>
+								<div class="pricing_price">
+									<h4>120 $ Month</h4>
+								</div>
+							</div>
+
+							<div class="pbody">
+								<ul>
+									<li>Disk Space <span>300 GB</span></li>
+									<li>Data Transfer <span>Unlimited</span></li>
+									<li>Ftp Accounts <span>25</span></li>
+									<li>Email Boxes <span>1000</span></li>
+									<li>Free Domains <span>1</span></li>
+									<li>Support <span>24Hours</span></li>
+								</ul>
+							</div>
+							<div class="pricing-footer">
+								<a href="#" class="btn btn-primary btn-block">Order it Now</a>
+							</div>
+						</div><!-- end pricing-table -->
+					</div><!-- end col -->
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="pricing-table">
+							<div class="pheader clearfix">
+								<div class="pricing-title">
+									<h4>Enterprise Plan</h4>
+									<p>Ideal for Business Websites</p>
+								</div>
+								<div class="pricing_price">
+									<h4>Custom</h4>
+								</div>
+							</div>
+
+							<div class="pbody">
+								<ul>
+									<li>Disk Space <span>300 GB</span></li>
+									<li>Data Transfer <span>Unlimited</span></li>
+									<li>Ftp Accounts <span>25</span></li>
+									<li>Email Boxes <span>1000</span></li>
+									<li>Free Domains <span>1</span></li>
+									<li>Support <span>24Hours</span></li>
+								</ul>
+							</div>
+							<div class="pricing-footer">
+								<a href="#" class="btn btn-primary btn-block">Order it Now</a>
+							</div>
+						</div><!-- end pricing-table -->
+					</div><!-- end col -->
+
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		
+		           <!-- Contact Us section -->
+				<section class="section white">
+			<div class="container">
+				<div class="section-title text-center">
+					<h4>Contact Us</h4>
+					<hr/>
+					<p>Fill up our inbox, we like that</p>
+				</div><!-- end title -->
+
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<div class="contact_form comment-form-wrap wow fadeIn">
+							<div id="message"></div>
+							<form id="contactform" class="row" action="http://templatevisual.com/demo/ova/contact.php" name="contactform" method="post">
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<input type="text" name="name" id="name" class="form-control" placeholder="Name"/> 
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<input type="text" name="email" id="email" class="form-control" placeholder="Email"/> 
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Message Below"></textarea>
+									<button type="submit" value="SEND" id="submit" class="btn btn-primary btn-block"> Send Your Message</button>
+								</div>
+							</form> 
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="contact-info">
+							<h4>India Office</h4>
+
+								<div class="service-style-2 icon-left row wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+									<div class="col-md-2">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<div class="col-md-10 nopadding">
+										<p>A-310, Siddhi Vinayak Tower, Near Kataria Arcade,<br/>
+										 B/h Jaguar Showroom, Prahaladnagar Extension,<br/>
+                                         Makarba, Ahmedabad 380051 - Gujarat - India.</p>
+										<span>- contact@browseinfo.in</span>
+										<span>- (+91) 9978020412</span>
+									</div>
+								</div><!-- end service -->
+
+							<div class="clearfix"></div>
+
+							<h4>USA Office</h4>
+
+								<div class="service-style-2 icon-left row wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+									<div class="col-md-2 ">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<div class="col-md-10 nopadding">
+									<p>Redwood City, CA United States.<br/></p>
+									<span>- info@browseinfo.net</span>
+								    <span>- 650-288-6767</span>
+									</div>
+								</div><!-- end service -->
+
+						</div><!-- end contact info -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+
+		<section class="framesection">
+			<div id="map">
+			</div>
+		</section><!-- end framesection -->
+
+
+
+		
+
+</xpath>
+		</template>
+  
+<template id="footer_custom_new" inherit_id="website.footer_default" name="Footer">
+		    <xpath expr="//div[@class='container hidden-print']" position="replace">
+ 		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="widget">
+							<div class="widget-title">
+								<h4>About BrowseInfo</h4>
+								<hr/>
+							</div><!-- end title -->
+
+							<div class="text-widget">
+								<p>BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. <a href="/about" style="color: #1abb9a;">Read More...</a></p>
+
+								<ul class="social">
+									<li class="facebook" ><a href="https://www.facebook.com/pages/BrowseInfo/416425701744026?fref=ts/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="google"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									<li class="github"><a href="https://www.github.com/browseinfo" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									<li class="skype"><a href="https://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a></li>
+								</ul>
+
+							</div><!-- end text-widget -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="widget">
+							<div class="widget-title">
+								<h4>Recent Blogs</h4>
+								<hr/>
+							</div><!-- end title -->
+							<div class="twitter-widget">
+								<ul class="latest-tweets">
+								           <marquee direction="up" style=" height:290px;" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3">
+            
+               <li>
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/blog/2015/07/06/steps-to-install-odoo-8-on-ubuntu/" target="_blank" style="margin-top:12px;"> How To Install Odoo 8 on Ubuntu  </a>
+                    
+                </li>
+                <li>
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/blog/2015/07/06/how-to-create-your-conf-file-in-odoo-8/" target="_blank" style="margin-top:12px;"> How To Create Your .conf file in Odoo 8 </a>
+                    
+                </li>
+               
+                <li class="last">
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/blog/2015/07/06/how-do-i-connect-to-server-in-ubuntu-using-ppk-pem-file/" target="_blank" style="margin-top:20px;"> How do I connect to server in ubuntu using .ppk, .pem file </a>
+                    
+                </li>
+                
+                 <li class="last">
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/blog/2015/07/07/odoo-hongkong-localization-coa/" target="_blank" style="margin-top:12px;"> BrowseInfo Hong Kong Localization module for Odoo </a>
+                    
+                </li>
+                
+                 <li class="last">
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/blog/2015/08/05/step-for-how-to-use-web_google-module-for-crm/" target="_blank" style="margin-top:12px;"> Step for How to use web_google Module for CRM: </a>
+                    
+                </li>
+                
+                 <li class="last">
+                    <img src="/browseinfo_theme/static/src/upload/logo.png" height="30px;" width="30px;" alt="" style="border-radius:5px;" />
+                    <a href="http://browseinfo.in/" target="_blank" style="margin-top:12px;"> Browseinfo - Leading Odoo Development Company</a>
+                   </li>  
+                             
+                </marquee>
+								</ul><!-- end latest-tweet -->
+							</div><!-- end twitter-widget -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="widget"  align="center">
+							<div class="widget-title">
+								<h4>Quick Links</h4>
+								<hr/>
+							</div><!-- end title -->
+							<div class="contact-widget">
+								<ul class="contact-details">
+									<li><strong><a href="#" style="color: #1abb9a;">Home</a></strong></li>
+									<li><strong><a href="/about" style="color: #1abb9a;">About Us</a></strong></li>
+									<li><strong><a href="/services" style="color: #1abb9a;">Services</a></strong></li>
+									<li><strong><a href="/odoo" style="color: #1abb9a;">Odoo</a></strong></li>
+									<li><strong><a href="/career" style="color: #1abb9a;">Career</a></strong></li>
+									<li><strong><a href="#" style="color: #1abb9a;">Contact Us</a></strong></li>
+								</ul><!-- end contact-details -->
+							</div><!-- end contact widget -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="widget">
+							<div class="widget-title">
+								<h4>Get In Touch</h4>
+								<hr/>
+							</div><!-- end title -->
+							<div class="contact-widget">
+								<ul class="contact-details">
+									<li><i class="fa fa-map-marker"></i> Address : <strong>A-310, Siddhi Vinayak Tower,</strong></li>
+									<li> <strong>Near Kataria Arcade, B/h Jaguar Showroom,</strong></li>
+									<li> <strong>Prahaladnagar Extension,</strong></li>
+									<li> <strong>Makarba, Ahmedabad - 380051.</strong></li>
+									<li><i class="fa fa-phone"></i> Phone : <strong>(+91) 9978020412</strong></li>
+									<li><i class="fa fa-envelope"></i> Email : <strong>contact@browseinfo.in</strong></li>
+								</ul><!-- end contact-details -->
+							</div><!-- end contact widget -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer><!-- end footer -->
+
+
+    
+          </xpath>
+        </template>
+
+        <template id ="replace_free_website" inherit_id="website.layout_footer_copyright">
+            <xpath expr="//div[@class='container mt16 mb8']" position="replace">
+		<section class="copyrights">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p> ©  Copyright 2015 |  <a href="http://browseinfo.in/" target="_blank">BrowseInfo</a></p>
+					</div>
+					<div class="col-md-6 text-right">
+						<p>All Rights Reserved<sup>TM</sup></p>
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end copyrights -->
+		<div class="backtotop">Scroll to Top</div>
+
+	    
+    </xpath>
+</template>
+
+<template id="about" name="About Us">
+ <t t-call="website.layout">
+
+		<section class="section fullscreen paralbackground parallax" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_07.jpg'); height:250px;" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h1 style="color:white;">About us</h1>
+						<p style="color:#1abb9a;">We are on a mission</p>
+					</div>
+					<div class="col-md-3">
+	                    <ol class="breadcrumb text-right">
+	                        <li><a href="#">Home</a></li>
+	                        <li class="active" style="color:#1abb9a;">About us</li>
+	                    </ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section dark">
+			<div class="container">
+					<div class="row text-center">
+					<div id="content" class="col-md-12">
+						<p style="font-size:15px; color:white;"> BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+
+						<p style="font-size:15px; color:white;"> We work closely in collaboration with clients to ensure that every project communicates their unique identity. And we're not focused on "giving advice" but on creating solutions that sell.</p>
+
+						<p style="font-size:15px; color:white;"> At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity. </p>
+
+						<p style="font-size:15px; color:white;"> We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders. </p>
+
+						
+
+					</div><!-- end content -->
+				</div><!-- end row -->
+		</div>
+		</section>
+		
+		        <section class="section white">
+			<div class="container">
+
+
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+					<h3>We are BrowseInfo</h3>
+						<p> BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions. </p>
+
+						<p>We work closely in collaboration with clients to ensure that every project communicates their unique identity. And we're not focused on "giving advice" but on creating solutions that sell. </p>
+
+						<p>At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity.   </p>
+						<p>We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders.  </p>
+					</div><!-- end col -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="accordion-widget">
+                            <div class="accordion-toggle-2">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                                                    <h3>Who we are ? <i class="indicator fa fa-plus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>BrowseInfo is a global IT services company focusing on software development, IT consulting and provides offshore outsourcing solutions to enterprises worldwide. It has the required development facilities and infrastructure combined with quality assurance processes to ensure timely delivery of high quality and low maintenance Web and Software solutions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                                                    <h3>Why BrowseInfo ? <i class="indicator fa fa-minus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <p>At Browse Info, We offer an extensive array of innovative solutions, from corporate branding and interactive marketing to web portals and multi-tier applications. Our main services are - web design, web development. We make the right use of modern technologies like PHP, ASP.net, Ajax, Flash,Jquery, etc. and high quality of creativity. We develop custom web applications which not only establish easy and effective interaction with your customers but also make you one of the industry leaders.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                                                    <h3>Odoo (OpenERP) ? <i class="indicator fa fa-plus"></i></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>"Opensource 's most advanced business application software provided by only OpenERP" OpenERP is a opensource ERP system which is most popular ERP on Opensource cause OpenERP provided the all kind of big business application, like CRM, Sale, Purchase,Accounting, MRP, Warehouse, Marketing Campaign etc... The most benefits of OpenERP is these all modules are integrated to each others. So it reduces the data entry and become automated system.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- accordion -->
+                        </div><!-- end accordion-widget -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		
+  </t>
+</template>
+
+
+<template id="services" name="Services">
+ <t t-call="website.layout">
+		<section class="section fullscreen paralbackground parallax" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_07.jpg'); height:250px;" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h1 style="color:white;">Services</h1>
+						<p style="color:#1abb9a;">How awesome can it be?</p>
+					</div>
+					<div class="col-md-3">
+	                    <ol class="breadcrumb text-right">
+	                        <li><a href="#">Home</a></li>
+	                        <li class="active" style="color:#1abb9a;">Services</li>
+	                    </ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section grey box-shadow">
+			<div class="container">
+	
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-star"></i>
+							</div>
+							<p><strong>Odoo (Open ERP)</strong></p>
+							<p>We have good experts on OpenERP technical and functional parts like CRM, Sale, Purchase , Manufacturing etc. We are working on all version of OpenERP 6.0, 6.1 and also able to do for future V7. We have providing services of offshore module development on OpenERP.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-desktop"></i>
+							</div>
+							<p><strong>Web Designing</strong></p>
+							<p>We offer complete web design and coding of web pages delivering interactive web applications. We can customize a solution specifically to suit your needs from basic Website Design to complete e-commerce stores. Whether you are looking for a basic brochure type layout or fully interactive website,Contact us to discuss your project.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-umbrella"></i>
+							</div>
+							<p><strong>Web Development</strong></p>
+							<p>We offers complete cycle of development beginning with software vision formulating and requirements management, analysis, designing up to coding, implementation, rigorous testing, deployment and support. Our team can contribute at any stage of a project or project with non-complete life cycle.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+					<div class="col-md-3 col-sm-6">
+						<div class="service-style-1 nobg wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="icon-container border-radius">
+								<i class="fa fa-gear"></i>
+							</div>
+							<p><strong>Training</strong></p>
+							<p>We have a good Functional Experts of OpenERP which have knowledge of Official addons as well as community/extra-addons modules knowledge. So we can provide you a Fuctional Training of not only Offical addons but we can also aware you about the community addons which will use for you.</p>
+						</div><!-- end service -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+				<!--<div class="button-wrapper text-center">
+					<a href="#" class="btn btn-primary border-radius btn-lg btn-dark">Read More</a> 
+				</div> -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+  </t>
+</template>	
+
+<template id="odoo" name="Odoo">
+ <t t-call="website.layout">
+ 
+ 		<section class="section fullscreen paralbackground parallax" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_07.jpg'); height:250px;" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h1 style="color:white;">Odoo</h1>
+						<p style="color:#1abb9a;">How awesome it is?</p>
+					</div>
+					<div class="col-md-3">
+	                    <ol class="breadcrumb text-right">
+	                        <li><a href="#">Home</a></li>
+	                        <li class="active" style="color:#1abb9a;">Odoo</li>
+	                    </ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section fullscreen paralbackground parallax nopadbot" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_01.jpg');" data-img-width="1608" data-img-height="709" data-diff="100">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="text-widget">
+							<h4>Odoo (OpenERP)</h4>
+							<hr/>
+
+							<p>"Opensource 's most advanced business application software provided by only OpenERP" OpenERP is a opensource ERP system which is most popular ERP on Opensource cause OpenERP provided the all kind of big business application, like CRM, Sale, Purchase,Accounting, MRP, Warehouse, Marketing Campaign etc... The most benefits of OpenERP is these all modules are integrated to each others. So it reduces the data entry and become automated system.</p>
+
+							<p>This is the only one Opensource ERP which provided the 1000+ modules, you can see it on apps.openerp.com. OpenERP is a good business model with modular functionality with using a MVC architecture. OpenERP provided a generic system flow, So if anyone want to use then have to know about the how to configure your system with OpenERP and we are doing this very peacefully and accurately. Also you have to do some customization on this generic system and we have provided it.</p>
+							<p>OpenERP framework is not hard to use, So user can easily customize it.</p>
+							<p>OpenERP framework is developed on python programming language, python is also opensource so you can use any libraries of it freely.</p>
+
+							<!--<div class="button-wrapper">
+							<a href="#" class="btn btn-primary border-radius">Read More</a>
+								
+								</div> &#160;&#160;&#160;&#160;  <a href="#" class="btn btn-default border-radius">Read More</a>
+							--><!-- end button-wrapper -->
+						</div><!-- end widget -->
+					</div><!-- end col -->
+					<div class="col-md-6 col-sm-6">
+						<div class="device-image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+							<img src="/browseinfo_theme/static/src/upload/Odoo_mobile.png" alt="" style="margin-top:-124px;"/>
+						</div><!-- end service -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+		<section class="section white">
+			<div class="container">
+				<div id="shop-content" class="row">
+					<div class="col-md-5">
+						<div class="shop-images">
+							<div class="portfolio-style-1 shop-style-1 entry wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+								<div class="ribbon1"></div>
+								<img src="/browseinfo_theme/static/src/upload/module.png" alt=""/>
+								<div class="magnifier">
+									<div class="visible-title1 clearfix">
+										
+									</div><!-- end visible-title -->
+								</div><!-- end magnifier -->
+							</div><!-- end portfolio -->
+						</div><!-- end images -->
+					</div>
+
+					<div class="col-md-7">
+						<div class="shop-desc">
+							<h2 style="color:#1abb9a;">Module Information</h2>
+						
+							<p>Purchasing a row material, is one of the basic needs of a company. Here, Purchase department can maintain information of their supplier, create a purchase order, and maintain the track records related to purchase.</p>
+							
+							<p>Sales to a company is as important as cell to human body. Without them, neither human body,nor company body can sustain. For Company, OpenERP covers all the aspects of sales management. We can generate sales orders, customer invoices, delivery orders, etc. which helps company to analyze their growth.</p>
+							
+							<p>To maintain stock is a difficult task. But the Warehouse Management makes it very easy. In OpenERP, user can easily maintain inward and outward movement of stocks.</p>
+
+				
+						</div><!-- end desc -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+
+
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+			<section class="section white">
+			<div class="container">
+				<div id="shop-content" class="row">
+					<div class="col-md-5">
+						<div class="shop-images">
+							<div class="portfolio-style-1 shop-style-1 entry wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+								<div class="ribbon1"></div>
+								<img src="/browseinfo_theme/static/src/upload/offshore_01.png" alt=""/>
+								<div class="magnifier">
+									<div class="visible-title1 clearfix">
+										
+									</div><!-- end visible-title -->
+								</div><!-- end magnifier -->
+							</div><!-- end portfolio -->
+						</div><!-- end images -->
+					</div>
+
+					<div class="col-md-7">
+						<div class="shop-desc">
+							<h2 style="color:#1abb9a;">Services</h2>
+						    <small>Offshore Module Development</small>
+							<p>We have good experts on OpenERP technical and functional parts like CRM, Sale, Purchase , Manufacturing etc. We are working on all version of OpenERP 6.0, 6.1 and also able to do for future V7. We have providing services of offshore module development on OpenERP with not price hike. We have already done the different module development like public_purchases, subcontracting, Tally integration, Point of sale with bar-code reader also doing the localization chart of account. We have provided the module development with very affordable price. We already done a subcontracting process with OpenERP which is able to do the subcontracting process with invoicing generation. Also we have done the Indian POS system with bar-code generations.</p>
+							
+									
+						</div><!-- end desc -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+
+
+			</div><!-- end container -->
+		</section><!-- end section -->
+		
+			<section class="section white">
+			<div class="container">
+				<div id="shop-content" class="row">
+					<div class="col-md-5">
+						<div class="shop-images">
+							<div class="portfolio-style-1 shop-style-1 entry wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+								<div class="ribbon1"></div>
+								<img src="/browseinfo_theme/static/src/upload/training_01.jpg" alt=""/>
+								<div class="magnifier">
+									<div class="visible-title1 clearfix">
+										
+									</div><!-- end visible-title -->
+								</div><!-- end magnifier -->
+							</div><!-- end portfolio -->
+						</div><!-- end images -->
+					</div>
+
+					<div class="col-md-7">
+						<div class="shop-desc">
+							<h2 style="color:#1abb9a;">Training</h2>
+						    <small>We Provide Functional Technical Training</small>
+							<p>Why need Functional Training?</p>
+							
+							<p>ERP has a huge sea of applications. Additionally OpenERP provided a all generic application of ERP. There are 150+ official modules which covered the "CRM (Customer Relationship management), Sales, Accounting, MRP(Manufacturing Resource Planning), Logistic Management, Marketing Campaign, Knowledge and Document management. So If you want to use a OpenERP or become a partner of OpenERP then you should know the flow OS these modules . So the Functional Training of OpenERP is required.</p>
+							
+							<p>Benefits of Fuctional Training</p>
+							<p>On Functional Training you will get the all modules knowledge and configurations,So you can configure your system by your hand easily. OpenERP is OpenSource Software, So If you want to work with OpenERP or want to do a business on OpenERP then after a Functional Training you are also able to provide a Functional Training to another clients/Users. OpenERP is not tough to understand and configure like SAP. On SAP you have to required one SAP person to maintain your system but on OpenERP once you get the Functional Training then you can able to maintain your system easily.</p>
+							<p>Why Functional Training through BrowseInfo</p>
+							<p>We have a good Functional Experts of OpenERP which have knowledge of Official addons as well as community/extra-addons modules knowledge. So we can provide you a Fuctional Training of not only Offical addons but we can also aware you about the community addons which will use for you. Most important thing is about BrowseInfo Fuctional Training which is we are providing a module based Fuctional Training. You can chose your module applications and we can charge only for it. Also we have provided a functional training with very affordable price.</p>
+							
+
+				
+						</div><!-- end desc -->
+					</div><!-- end col -->
+				</div><!-- end row -->
+
+
+			</div><!-- end container -->
+		</section><!-- end section -->
+
+  </t>
+</template>
+
+    <template id="career" name="Career">
+        <t t-call="website.layout">
+        
+         		<section class="section fullscreen paralbackground parallax" style="background-image:url('/browseinfo_theme/static/src/upload/parallax_07.jpg'); height:250px;" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h1 style="color:white;">Join Us</h1>
+						<p style="color:#1abb9a;">Want to have a Career with us ?</p>
+					</div>
+					<div class="col-md-3">
+	                    <ol class="breadcrumb text-right">
+	                        <li><a href="#">Home</a></li>
+	                        <li class="active" style="color:#1abb9a;">Career</li>
+	                    </ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+ 
+        <section class="section dark">
+			<div class="container">
+	
+                </div>
+				<div class="row text-center">
+					<div id="content" class="col-md-12">
+						<p style="font-size: 30px;
+    color: #1abb9a;
+    font-style: italic;
+    font-family: serif;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: -2px;"> “The best brains of the nation may be found on the LAST BENCHES of the classroom ” - Dr. APJ Abdul Kalam</p><br/>
+
+
+           <h4 style="color: #FFFFFF;"> If You Think You're one of those, Send your resume at <strong>CAREER@BROWSEINFO.IN</strong></h4>
+					
+                        
+					</div><!-- end content -->
+				</div><!-- end row -->
+		
+		</section>
+
+  </t>
+</template>
+
+    </data>
+</openerp>

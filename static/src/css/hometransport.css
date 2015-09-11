@@ -1,0 +1,153 @@
+/* ----------------------------------------------------
+	TRANSPORT COLOR SCHEME	
+------------------------------------------------------- */  
+
+	/* IF IMPORTANT */
+	
+	.shortby a,
+	#sidebar .list-widget ul li:hover span,
+	#sidebar .latest-tweets h4::before,
+	.slider-button a.btn-default {
+		color:#c0392b !important;
+	}
+
+	.parallax-window .btn-primary {
+		color: #c0392b !important;
+	  	border: 2px solid #c0392b !important;
+	}
+
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	  	border-top-color: #c0392b !important;
+	}
+	.form-control:focus {
+	  	border-color: #c0392b !important;
+	}
+	.pagination > li > a:hover, 
+	.pagination > li > span:hover,
+	.quotepost,
+	#sidebar .widget .widget-title h4 span,
+	.pheader,
+	.contact-info .service-style-2 i,
+	.service-style-1.service-absolute:hover .social i,
+	.service-style-1.withborder:hover .icon-container,
+	.background,
+	.service-style-1.nobg:hover,
+	.teammember:hover .readmore i,
+	.tag-widget a:hover,
+	.noborder:hover .icon-container,
+	.owl-theme .owl-controls .owl-nav [class*='owl-']:hover,
+	.sexyload,
+	.sexyload:before,
+	.sexyload:after,
+	.blog-meta .btn:hover,
+	.blog-meta .btn:focus,
+	.smallcount span,
+	.btn-primary,
+	.accordion-toggle h3 .fa-minus,
+	.dropdown-menu > li.shopcart:focus .btn-primary,
+	.dropdown-menu > li.shopcart.active .btn-primary,
+	.dropdown-menu > li.shopcart:active .btn-primary,
+	.dropdown-menu > li.shopcart:hover .btn-primary,
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-primary.focus,
+	.btn-primary:active,
+	.btn-primary.active,
+	.open > .dropdown-toggle.btn-default {
+		color: #fff !important;
+		background-color: #c0392b !important;
+	  	border-color: #c0392b !important;
+	}
+
+	.parallax-window .btn-dark,
+	.btn-dark {
+		color:#ffffff !important;
+	    background-color: #202020 !important;
+	    border-color: #202020 !important;
+	}
+	
+
+	/* IF RGBA */
+
+	.magnifier {
+		background-color: rgba(192,57,43,0.9);
+	}
+
+	/* IF NORMAL */
+
+	::selection {
+		background: #c0392b; /* Safari */
+		color:#fff;
+	}
+	
+	::-moz-selection {
+		background: #c0392b; /* Firefox */
+		color:#fff;
+	}
+	.owl-theme .owl-dots .owl-dot span,
+	.progress-bar,
+	.backtotop,
+	.service-style-1:hover .icon-container {
+		background-color: #c0392b;
+	}
+
+	.fun h4,
+	.list-widget li:hover i,
+	.teammember:hover h4,
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
+	.testimeta p,
+	.blog-style-2 .blog-meta span a,
+	.invisible-title h4,
+	.invisible-title h4 a,
+	.copyrights a,
+	.twitter-widget a,
+	.accordion-toggle h3:hover,
+	.accordion-toggle h3:focus,
+	.blog-title h4 a,
+	.small-title h4,
+	.text-widget h4,
+	.service-style-2 i,
+	.section-title h4,
+	.service-style-1:hover strong,
+	.contactwrap i,
+	.portfolio-filter a,
+	.dropdown-menu .table h4,
+	#sidebar .widget .widget-title h4,
+	.dropdown-menu .table h4 a,
+	.section-title .fa-play,
+	.contact-info span,
+	.yamm-fw .box li:hover a,
+	.pbody ul li span,
+	.header .dropdown-menu > li:hover > a,
+	.header .dropdown-menu > .active > a,
+	.header .dropdown-menu > .active > a:hover,
+	.header .dropdown-menu > .active > a:focus,
+	.header .nav > li > a:hover {
+		color:#c0392b;
+	}
+
+	.header .dropdown-menu {
+		border-top-color: #c0392b;
+	}
+	
+	@-webkit-keyframes load1 {
+	  0%,
+	  80%,
+	  100% {
+	    box-shadow: 0 0 #c0392b;
+	  }
+	  40% {
+	    box-shadow: 0 -2em #c0392b;
+	  }
+	}
+	@keyframes load1 {
+	  0%,
+	  80%,
+	  100% {
+	    box-shadow: 0 0 #c0392b;
+	  }
+	  40% {
+	    box-shadow: 0 -2em #c0392b;
+	  }
+	}
+
